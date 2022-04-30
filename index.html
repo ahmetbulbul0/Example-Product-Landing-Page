@@ -10,23 +10,23 @@
 <body>
     <header id="header">
         <nav id="nav-bar">
-            <a class="nav-link" href="#">Home</a>
-            <a class="nav-link" href="#">Purchase</a>
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#purchase">Purchase</a>
             <img src="https://www.monsternotebook.com.tr/images/frontend/monster-logo.svg" alt="Monster Logo" id="header-img">
-            <a class="nav-link" href="#">Other Products</a>
-            <a class="nav-link" href="#">Cart</a>
+            <a class="nav-link" href="#other-products">Other Products</a>
+            <a class="nav-link" href="#subscribe">Subscribe</a>
         </nav>
     </header>
-    <div class="product-title">
+    <div class="product-title" id="home">
         <h2>Pusat Virtual 7.1 RGB Gaming Headset Lite</h2>
     </div>
-    <div class="product-journal">
-        <form action="https://www.freecodecamp.com/email-submit" id="form">
+    <div class="product-journal" id="subscribe">
+        <form action="https://www.freecodecamp.com/email-submit" method="POST" id="form">
             <div class="text">
                 <span>Subscribe To Our E-Mail Newsletter</span>
             </div>
             <div class="email">
-                <input type="email" placeholder="Enter email here..." id="email" required>    
+                <input type="email" placeholder="Enter email here..." id="email" name="email" required>    
             </div>
             <div class="submit">
                 <input type="submit" value="Send" id="submit">
@@ -52,7 +52,7 @@
     <div class="product-video">
         <iframe id="video" src="https://www.youtube.com/embed/Cp1g-JurqEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <div class="product-purchase">
+    <div class="product-purchase" id="purchase">
         <div class="product">
             <img src="https://img-monsternotebook.mncdn.com/UPLOAD/urun-gorselleri-yeni/PUSAT/Virtual 7.1 RGB Headset Lite/thumb/Pusat_HeadSet_Large v2 emre.559_medium.png" alt="product-image" class="product-img">
             <span class="product-name">Pusat Virtual 7.1 RGB Gaming Headset Lite</span>
@@ -64,7 +64,7 @@
             </div>
         </div>
     </div>
-    <div class="other-products">
+    <div class="other-products" id="other-products">
         <div class="title">
             <span>Other Products</span>
         </div>
@@ -101,6 +101,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
